@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Child from "./child";
+
+import ChildWithImage from "./childWithImage";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -11,13 +13,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>This is Counter {count} </h1>
-
-      <button onClick={increment}>Click to increment</button>
-
-      <Child  number={count} />
-
-      <Child  number={count} />
+      <ChildWithImage />
     </div>
   );
 }
