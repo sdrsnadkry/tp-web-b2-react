@@ -1,8 +1,12 @@
 import React from 'react'
 
+import ChildWithImage from '../childWithImage'
+
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+        <ChildWithImage />
+    </div>
   )
 }
 
